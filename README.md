@@ -14,15 +14,6 @@ se inserta al final y se elimina del frente.
 | Paredes Ximena | @usuario |
 | Quiñonez Gandhi | @usuario |
 
-## Division del trabajo
-
-| Integrante | Tarea en `src/Operaciones.cpp` |
-|------------|--------------------------------|
-| Freire Daniela | Estructura base (Nodo, main, headers) e `insertar()` |
-| Persona 2 | `eliminar()` |
-| Persona 3 | `buscar()` |
-| Persona 4 | `imprimir()` |
-
 Cada integrante busca su `TODO`, programa su funcion y hace **su propio commit**.
 
 ## Estructura del proyecto
