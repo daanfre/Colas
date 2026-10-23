@@ -12,7 +12,7 @@ se inserta al final y se elimina del frente.
 | Allauca Steven | @usuario |
 | Freire Daniela | @usuario |
 | Paredes Ximena | @xkparedes-alt |
-| Quiñonez Gandhi | @usuario |
+| Quiñonez Gandhi | @gjquinonez-cell |
 
 Cada integrante busca su `TODO`, programa su funcion y hace **su propio commit**.
 
