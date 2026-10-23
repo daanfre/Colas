@@ -11,7 +11,7 @@ se inserta al final y se elimina del frente.
 |--------|-------------------|
 | Allauca Steven | @usuario |
 | Freire Daniela | @usuario |
-| Paredes Ximena | @usuario |
+| Paredes Ximena | @xkparedes-alt |
 | Quiñonez Gandhi | @usuario |
 
 Cada integrante busca su `TODO`, programa su funcion y hace **su propio commit**.
