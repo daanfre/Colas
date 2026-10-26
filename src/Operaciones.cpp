@@ -1,22 +1,16 @@
-/**********UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE************************************************
- 
- Proposito:                      Colas      
- Autor:                          Allauca Steven, Freire Daniela, Paredes Ximena, Quiñonez Gandhi                        
- Fecha de creacion:              23/10/2026                          
- Fecha de modificacion:          23/10/2026                          
- Materia:                        Estructura de datos                 
- NRC :                           36865                          
- ************************************************************************************************/
-
-#include "Operaciones.h"
-#include <iostream>
-using namespace std;
-
-// ===== DANIELA: INSERTAR =====
-// Crear un nodo nuevo con new Nodo(valor) y ponerlo al FINAL de la cola.
-// Si la cola esta vacia, el nuevo nodo es frente y fin a la vez.
 void insertar(Nodo*& frente, Nodo*& fin, int valor) {
-    // TODO Daniela
+    // Crear el nodo nuevo con el valor recibido
+    Nodo* nuevo = new Nodo(valor);
+
+    if (frente == nullptr) {
+        // Si la cola esta vacia, el nuevo es el primero
+        frente = nuevo;
+    } else {
+        // Si no, el ultimo actual apunta al nuevo
+        fin->setSiguiente(nuevo);
+    }
+    // El nuevo pasa a ser el ultimo de la cola
+    fin = nuevo;
 }
 
 // ===== XIMENA PAREDES : ELIMINAR =====
