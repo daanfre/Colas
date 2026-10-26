@@ -19,15 +19,22 @@ void insertar(Nodo*& frente, Nodo*& fin, int valor) {
     // TODO Daniela
 }
 
-// ===== PERSONA 2: ELIMINAR =====
+// ===== XIMENA PAREDES : ELIMINAR =====
 // Sacar el nodo del FRENTE y liberarlo con delete.
 // Si la cola esta vacia, mostrar un mensaje.
 // Si la cola queda vacia, fin tambien debe quedar en nullptr.
-void eliminar(Nodo*& frente, Nodo*& fin) {
-    // TODO Persona 2
-    // (Borrar estas lineas al implementar: evitan un bucle infinito en main)
-    frente = nullptr;
-    fin = nullptr;
+void eliminar (Nodo*&frente, Nodo*&fin){
+    if(frente == nullptr){
+        cout << "la cola esta vacia, no hay nada que eliminar .\n";
+        return;
+    }
+    Nodo*auxiliar=frente;
+    frente=frente->getSiguiente();
+    if(frente == nullptr){
+        fin=nullptr;
+
+    }
+    delete auxiliar;
 }
 
 // ===== PERSONA 3: BUSCAR =====
