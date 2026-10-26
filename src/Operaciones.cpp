@@ -44,9 +44,19 @@ bool buscar(const Nodo* frente, int valor) {
     return false;
 }
 
-// ===== PERSONA 4: IMPRIMIR =====
+// ===== Steven: IMPRIMIR =====
 // Mostrar: "Cola (frente a fin): 10 20 30" o "vacia" si no hay nodos.
 void imprimir(const Nodo* frente) {
-    // TODO Persona 4
-    cout << "imprimir() aun no implementado\n";
+    cout << "Cola (frente a fin): ";
+    if (frente == nullptr) {
+        cout << "vacia\n";
+        return;
+    }
+
+    const Nodo* actual = frente;
+    while (actual != nullptr) {
+        cout << actual->getDato() << " ";
+        actual = actual->getSiguiente();
+    }
+    cout << '\n';
 }
