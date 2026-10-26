@@ -34,7 +34,13 @@ void eliminar(Nodo*& frente, Nodo*& fin) {
 // Recorrer desde el frente con getSiguiente().
 // Devolver true si encuentra el valor, false si no.
 bool buscar(const Nodo* frente, int valor) {
-    // TODO Persona 3
+    const Nodo* actual = frente;
+    while (actual != nullptr) {
+        if (actual->getDato() == valor) {
+            return true;
+        }
+        actual = actual->getSiguiente();
+    }
     return false;
 }
 
